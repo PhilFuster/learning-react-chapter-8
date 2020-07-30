@@ -1,3 +1,5 @@
+# This repo has notes and examples from chapter 8 of Learning React - 2nd Edition by Alex Banks & Eve Porcello
+---------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
