@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import UserRepositories from './UserRepositories';
 function UserDetails({ data }) {
   return (
     <div className='githubUser'>
@@ -9,12 +8,12 @@ function UserDetails({ data }) {
         {data.name && <p>{data.name}</p>}
         {data.location && <p>{data.location}</p>}
       </div>
-      <UserRepositories
+      {/* Removing UserRepositories so the required fetch requests can be handled in the same place and be done in parallel  */}
+      {/* <UserRepositories
         login={data.login}
         onSelect={(repoName) => {
           console.log(`${repoName} selected`);
-        }}
-      />
+        }}    />*/}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Fetch from './Fetch';
-import UserDetails from './UserDetails';
+import UserDetails from './UserDetailsV2';
 
 /**
  * GitHubUser component using Fetch component
