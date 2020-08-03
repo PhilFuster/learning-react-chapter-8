@@ -11,10 +11,16 @@ function SearchForm({ value, onSearch = (f) => f }) {
 
   const submit = (e) => e.preventDefault();
   return (
-    <form onSubmit={submit}>
-      <label style={{ display: 'block' }} htmlFor='searchInput'>
-        Github User Login
-      </label>
+    <form
+      style={{
+        display: 'grid',
+        gridAutoFlow: 'column',
+        placeItems: 'stretch start',
+        gridAutoColumns: 'min-content',
+        gridGap: '10px',
+      }}
+      onSubmit={submit}
+    >
       <input
         id='searchInput'
         {...searchProps}
