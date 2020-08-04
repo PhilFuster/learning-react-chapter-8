@@ -18,12 +18,14 @@ const query = `
 `;
 const client = new GraphQLClient('https://api.github.com/graphql', {
   headers: {
-    Authorization: `Bearer 93271a917df330bd883ea730afa7a6f0d30f25c8`,
+    Authorization: `Bearer 5da257beabae27b8c501105b8b372bb84b29b3b4`,
   },
 });
+export { client, query };
+// Example use of client
 
-client
-  .request(query, { login: 'moontahoe' })
-  .then((results) => JSON.stringify(results, null, 2))
-  .then(console.log)
-  .catch(console.error);
+// client
+//   .request(query, { login: 'moontahoe' })
+//   .then((results) => JSON.stringify(results, null, 2))
+//   .then(console.log)
+//   .catch(console.error);
