@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import List from './ListV2';
 function UserDetails(data) {
   return (
     <div className='githubUser'>
       <img src={data.avatar_url} alt={data.login} style={{ width: 200 }} />
       <div>
+        {console.log(`UserDetails ${data}`)}
         <h1>{data.login}</h1>
         {data.name && <p>{data.name}</p>}
         {data.location && <p>{data.location}</p>}

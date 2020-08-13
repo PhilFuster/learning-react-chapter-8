@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './AppV3-GraphQL';
+import App from './AppV4-GraphQLHooks';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
